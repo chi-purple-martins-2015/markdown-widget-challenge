@@ -12,7 +12,9 @@ var parseLines = function(line) {
       var firstStar = line.indexOf('*');
       console.log(firstStar);
       if (line.includes("*", firstStar + 1 )) {
-        alert("italics");
+        var secondStar = line.indexOf("*", firstStar + 1);
+        console.log(secondStar);
+        return (line.slice(0, firstStar) + "<i>" + line.slice(firstStar + 1, secondStar) + "</i>" + line.slice(secondStar + 1) + "</br>");
       }
   }
   else {
