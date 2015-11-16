@@ -19,6 +19,16 @@ var parseLines = function(line) {
       }
   }
 
+    else if (line.indexOf('__') != -1) {
+      var firstUnderscore = line.indexOf('__');
+      console.log(firstUnderscore);
+      if (line.includes("__", firstUnderscore + 1 )) {
+        var secondUnderscore = line.indexOf("__", firstUnderscore + 1);
+        console.log(secondUnderscore);
+        return (line.slice(0, firstUnderscore) + "<b>" + line.slice(firstUnderscore + 2, secondUnderscore) + "</b>" + line.slice(secondUnderscore + 2) + "</br>");
+      }
+  }
+
   else if (line.indexOf('*') != -1) {
       var firstStar = line.indexOf('*');
       console.log(firstStar);
