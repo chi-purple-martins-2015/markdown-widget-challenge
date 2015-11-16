@@ -13,18 +13,18 @@ var parseLines = function(line) {
   // }
   if (line.substring(0, 3) == "###"){
     console.log("heading3")
-    console.log(line.substring(0, 2));
-    return ("<h3>" + line + "</h3><br>");
+    console.log(line.slice(3));
+    return ("<h3>" + line.slice(3) + "</h3><br>");
   }
   else if (line.substring(0, 2) == "##"){
     console.log("heading2")
-    console.log(line.substring(0,1));
-    return ("<h2>" + line + "</h2><br>");
+    console.log(line.slice(2));
+    return ("<h2>" + line.slice(2) + "</h2><br>");
   }
   else if (line.charAt(0) == "#"){
     console.log("heading1")
-    console.log(line.charAt(0));
-    return ("<h1>" + line + "</h1><br>");
+    console.log(line.slice(1));
+    return ("<h1>" + line.slice(1) + "</h1><br>");
   }
   else {
     return line;
