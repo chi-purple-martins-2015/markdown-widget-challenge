@@ -8,6 +8,17 @@ var parseLines = function(line) {
   else if (line.charAt(0) == "#"){
     return ("<h1>" + line.slice(1) + "</h1><br>");
   }
+
+  else if (line.indexOf('**') != -1) {
+      var firstStar = line.indexOf('**');
+      console.log(firstStar);
+      if (line.includes("**", firstStar + 1 )) {
+        var secondStar = line.indexOf("**", firstStar + 1);
+        console.log(secondStar);
+        return (line.slice(0, firstStar) + "<b>" + line.slice(firstStar + 2, secondStar) + "</b>" + line.slice(secondStar + 2) + "</br>");
+      }
+  }
+
   else if (line.indexOf('*') != -1) {
       var firstStar = line.indexOf('*');
       console.log(firstStar);
