@@ -1,0 +1,27 @@
+.user-input {
+  float: left;
+  width: 47%;
+  height: 600px;
+  margin-left: 0.5em;
+  background-color: rgb(127, 189, 187);
+  color: rgb(7, 15, 15);
+  font-family: Helvetica, sans-serif;
+  padding: 0.75em;
+}
+
+.markdown-preview {
+  float: right;
+  width: 47%;
+  height: 600px;
+  margin-right: 0.5em;
+  background-color: rgb(47, 48, 48);
+  color: whitesmoke;
+  font-family: Helvetica, sans-serif;
+  padding: 0.75em;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  margin-left: 2em;
+}
