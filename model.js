@@ -12,20 +12,12 @@ var parseLines = function(line) {
   //   console.log('----------------')
   // }
   if (line.charAt(0) != "#"){
-    return line
+    return line;
   }
   if (line.charAt(0) == "#"){
-    console.log('----------------')
-    console.log('yes')
-    console.log(line);
-    console.log('----------------')
     return ("<h1>" + line + "</h1><br>");
   }
   else {
-      console.log('----------------')
-    console.log('no')
-    console.log(line);
-    console.log('----------------')
     return line;
   }
 };
