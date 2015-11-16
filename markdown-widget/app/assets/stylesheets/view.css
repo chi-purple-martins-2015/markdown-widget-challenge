@@ -1,0 +1,16 @@
+body {
+
+}
+
+div {
+  background-color: black;
+  height: 200px;
+  width: 600px;
+  color: white;
+}
+
+textarea {
+  height: 200px;
+  width: 590px;
+  border: 1px solid black;
+}
