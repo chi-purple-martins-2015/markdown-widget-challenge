@@ -17,3 +17,11 @@ var transform = function(inputText) {
   }
   return inputString;
 };
+
+$(document).ready(function(){
+  $(document).on("keyup", function(){
+    var text = $("textarea").val();
+    var replacedText = transform(text);
+    $('.output').html(replacedText);
+  })
+})
