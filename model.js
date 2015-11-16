@@ -1,5 +1,9 @@
 var parseLines = function(line) {
-  console.log('-----------------')
-  console.log(line);
-  console.log('-----------------')
+  if (line[0] == "#"){
+    // var lineHTML = "<h1>" + line + "/<h1>"
+    return ("<h1>" + line + "/<h1>");
+  }
+  else {
+    return line;
+  }
 };
