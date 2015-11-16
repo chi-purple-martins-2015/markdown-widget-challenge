@@ -1,0 +1,14 @@
+h2{
+  margin-left: 5%;
+}
+div #source_id{
+  margin: 5%;
+}
+div #preview-div{
+    margin: 5%;
+}
+#preview-div p{
+  border: 5px double blue;
+  width: 300px;
+  height: 300px;
+}
