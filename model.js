@@ -17,6 +17,15 @@ var parseLines = function(line) {
         return (line.slice(0, firstStar) + "<i>" + line.slice(firstStar + 1, secondStar) + "</i>" + line.slice(secondStar + 1) + "</br>");
       }
   }
+  else if (line.indexOf('_') != -1) {
+      var firstStar = line.indexOf('_');
+      console.log(firstStar);
+      if (line.includes("_", firstStar + 1 )) {
+        var secondStar = line.indexOf("_", firstStar + 1);
+        console.log(secondStar);
+        return (line.slice(0, firstStar) + "<i>" + line.slice(firstStar + 1, secondStar) + "</i>" + line.slice(secondStar + 1) + "</br>");
+      }
+  }
   else {
     return (line + "<br>");
   };
